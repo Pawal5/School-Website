@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Valley School - Faculty</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2 class="logo">Green Valley School</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="i3.html">Faculty</a></li>
+        <li><a href="i2.html" style="color:#ffea00;">Courses</a></li>
+        <li><a href="i4.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="courses-header">
+    <h1>Our Faculty</h1>
+    <p>Meet our dedicated educators shaping the future</p>
+</header>
+
+<!-- SEARCH BAR -->
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search faculty by name or subject..." onkeyup="filterFaculty()">
+</div>
+
+<!-- FACULTY GRID -->
+<section class="faculty-section" id="facultyList">
+
+    <!-- Faculty Card 1 -->
+    <div class="faculty-card" onclick="openModal('modal1')">
+        <img src="female-math-teacher-in-school.webp">
+        <h3>Dr. Meera Sharma</h3>
+        <p>Principal | PhD Education</p>
+    </div>
+
+    <!-- Faculty Card 2 -->
+    <div class="faculty-card" onclick="openModal('modal2')">
+        <img src="happy-teacher-standing-front-black-board_160360-272.webp">
+        <h3>Priya Verma</h3>
+        <p>Physics Teacher</p>
+    </div>
+
+    <!-- Faculty Card 3 -->
+    <div class="faculty-card" onclick="openModal('modal3')">
+        <img src="360_F_237571142_VA5kg8IaT9F7kaCXZ5K9vaQLbcYYioX4.webp">
+        <h3>Anita Gupta</h3>
+        <p>Mathematics Teacher</p>
+    </div>
+
+    <!-- Faculty Card 4 -->
+    <div class="faculty-card" onclick="openModal('modal4')">
+        <img src="portrait-of-smiling-male-teacher-in-a-class-at-elementary-school-looking-at-camera-photo (1).webp">
+        <h3>Vikram Singh</h3>
+        <p>Computer Science</p>
+    </div>
+
+    <!-- Faculty Card 5 -->
+    <div class="faculty-card" onclick="openModal('modal5')">
+        <img src="360_F_282194469_qFCkPmeSZZDHxG3Qo2oDD47n6ANc77Dn.webp">
+        <h3>Rahul Nair</h3>
+        <p>English Teacher</p>
+    </div>
+
+</section>
+
+<!-- MODALS -->
+<!-- Modal 1 -->
+<div class="modal" id="modal1">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Dr. Meera Sharma</h2>
+        <p><b>Principal | PhD in Education</b></p>
+        <p>30+ years of experience in educational leadership, curriculum planning, and student development.</p>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal" id="modal2">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Priya Verma</h2>
+        <p><b>Physics Teacher</b></p>
+        <p>Expert in Physics and STEM education. Known for interactive experiments and practical learning.</p>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal" id="modal3">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Anita Gupta</h2>
+        <p><b>Mathematics Teacher</b></p>
+        <p>Specializes in Algebra & Calculus, makes learning math easy and fun for students.</p>
+    </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal" id="modal4">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <h2>Vikram Singh</h2>
+        <p><b>Computer Science</b></p>
+        <p>Expert in programming, robotics, and digital literacy. Leads coding club for students.</p>
+    </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="modal" id="modal5">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal5')">&times;</span>
+        <h2>Rahul Nair</h2>
+        <p><b>English Teacher</b></p>
+        <p>Specialist in grammar, literature, and spoken English. Encourages creativity and writing skills.</p>
+    </div>
+</div>
+
+
+
+<script src="s.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background:maroon;
+    color:white;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+}
+
+nav ul li a:hover{
+    color:#ffea00;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    background-image:url("exterior-school-building-ai_820340-58833.webp");
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:whitesmoke;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:48px;
+    text-shadow:2px 2px 5px black;
+
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+.btn{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    font-size:18px;
+    border-radius:5px;
+    background:#ffea00;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#fff;
+}
+
+/* ANNOUNCEMENTS SLIDER */
+.announcements{
+    background:white;
+    padding:20px;
+    text-align:center;
+}
+
+#slider{
+    overflow:hidden;
+    height:40px;
+    margin-top:10px;
+}
+
+.slide{
+    font-size:18px;
+    animation: slide 9s infinite;
+}
+
+@keyframes slide {
+    0%   {transform: translateY(0);}
+    33%  {transform: translateY(-40px);}
+    66%  {transform: translateY(-80px);}
+    100% {transform: translateY(0);}
+}
+
+/* FEATURES SECTION */
+.features{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.feature-boxes{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.box{
+    width:280px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.box img{
+    width:80px;
+}
+
+.box:hover{
+    transform:translateY(-8px);
+}
+
+/* FOOTER */
+footer{
+    background:maroon;
+    color:white;
+    text-align:center;
+    padding:15px 0;
+    margin-top:30px;
+}
+/* COURSES PAGE HEADER */
+.courses-header{
+    background:burlywood;
+    color:maroon;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.courses-header h1{
+    font-size:42px;
+}
+
+.courses-header p{
+    font-size:18px;
+    margin-top:10px;
+}
+
+/* COURSE BOXES */
+.course-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding:40px 20px;
+}
+
+.course-box{
+    width:280px;
+    background:white;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.course-box img{
+    width:80px;
+}
+
+.course-box h3{
+    margin:10px 0;
+    font-size:22px;
+}
+
+.course-box:hover{
+    transform:translateY(-8px);
+}
+/* SEARCH BAR */
+.search-container{
+    text-align:center;
+    margin:30px 0;
+}
+
+.search-container input{
+    width:60%;
+    padding:12px 15px;
+    font-size:18px;
+    border-radius:8px;
+    border:2px solid #004aad;
+}
+
+/* FACULTY GRID */
+.faculty-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding:20px;
+}
+
+.faculty-card{
+    width:260px;
+    background:white;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.faculty-card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.faculty-card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+/* MODAL */
+.modal{
+    display:none;
+    position:fixed;
+    z-index:1000;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.modal-content{
+    background:white;
+    margin:10% auto;
+    padding:30px;
+    width:50%;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+.close{
+    float:right;
+    font-size:30px;
+    cursor:pointer;
+}
+footer{
+    background:maroon;
+    color:white;
+    text-align:center;
+    padding:15px 0;
+    margin-top:auto;
+   
+}*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Add this here */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+
+footer {
+    margin-top: auto;
+}
